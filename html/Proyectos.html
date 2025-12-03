@@ -31,6 +31,7 @@
 
     <!-- Sección Hero Proyectos -->
     <section class="projects-hero">
+        <div class="hero-background"></div>
         <div class="container">
             <h1 class="hero-title">Nuestros Proyectos</h1>
             <p class="hero-subtitle">Explora nuestras soluciones innovadoras y casos de éxito</p>
@@ -42,57 +43,91 @@
         <div class="container">
             <div class="projects-grid">
                 <!-- Proyecto 1 -->
-                <div class="project-card">
+                <div class="project-card" id="proyecto-santo-domingo">
                     <div class="project-media">
-                        <img src="https://via.placeholder.com/600x400/795a85/ffffff?text=Proyecto+1" alt="Proyecto 1" class="project-image">
-                        <div class="project-overlay">
-                            <button class="play-button">▶</button>
-                        </div>
+                        <video class="project-video" controls preload="metadata">
+                            <source src="../videos/VideoCentroIntegral.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Proyecto 1</h3>
-                        <p class="project-description">Descripción detallada del proyecto destacado con tecnologías modernas y soluciones innovadoras.</p>
+                        <h3 class="project-title">Centro Integral Santo Domingo</h3>
+                        <p class="project-description">Diseño creativo y profesional de un centro de salud privado.</p>
                         <div class="project-tags">
                             <span class="tag">Web</span>
                             <span class="tag">Diseño</span>
                             <span class="tag">Desarrollo</span>
                         </div>
-                        <a href="#" class="project-link">Ver detalles →</a>
+                        <a href="#" class="project-link" onclick="toggleProjectDetails('proyecto-santo-domingo'); return false;">Ver detalles →</a>
+                        <div class="project-details" style="display: none;">
+                            <h4 class="tech-title">Tecnología a utilizar</h4>
+                            <div class="project-tags">
+                                <span class="tag">Visual Studio 2022</span>
+                                <span class="tag">.Net Framework (C#)</span>
+                                <span class="tag">SQL Server Management Studio</span>
+                                <span class="tag">Azure</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Proyecto 2 -->
-                <div class="project-card">
+                <div class="project-card" id="proyecto-cosmodya">
                     <div class="project-media">
-                        <video class="project-video" controls poster="https://via.placeholder.com/600x400/795a85/ffffff?text=Video+Proyecto+2">
-                            <source src="#" type="video/mp4">
+                        <video class="project-video" controls preload="metadata">
+                            <source src="../videos/VideoCalendario.mp4" type="video/mp4">
                             Tu navegador no soporta el elemento de video.
                         </video>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Proyecto 2</h3>
-                        <p class="project-description">Solución innovadora para problemas empresariales con enfoque en la experiencia del usuario.</p>
+                        <h3 class="project-title">Calendario CosmoDya</h3>
+                        <p class="project-description">Visualiza semanas largas o cortas y ajusta fechas y horarios según tu disponibilidad. Un sistema ágil y fácil de usar que mantiene tu agenda clínica siempre organizada y actualizada.</p>
                         <div class="project-tags">
-                            <span class="tag">Móvil</span>
-                            <span class="tag">UI/UX</span>
+                            <span class="tag">Web</span>
+                            <span class="tag">Diseño</span>
+                            <span class="tag">Desarrollo</span>
                         </div>
-                        <a href="#" class="project-link">Ver detalles →</a>
+                        <a href="#" class="project-link" onclick="toggleProjectDetails('proyecto-cosmodya'); return false;">Ver detalles →</a>
+                        <div class="project-details" style="display: none;">
+                            <h4 class="tech-title">Tecnología a utilizar</h4>
+                            <div class="project-tags">
+                                <span class="tag">Visual Studio 2022</span>
+                                <span class="tag">.Net Framework (C#)</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">SQL Server Management Studio</span>
+                                <span class="tag">Azure</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Proyecto 3 -->
-                <div class="project-card">
+                <div class="project-card" id="proyecto-portafolio">
                     <div class="project-media">
-                        <img src="https://via.placeholder.com/600x400/795a85/ffffff?text=Proyecto+3" alt="Proyecto 3" class="project-image">
+                        <video class="project-video" controls preload="metadata">
+                            <source src="../videos/VideoPerfil.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Proyecto 3</h3>
-                        <p class="project-description">Aplicación web con diseño moderno y funcional que mejora la productividad empresarial.</p>
+                        <h3 class="project-title">Portafolio Personal</h3>
+                        <p class="project-description">Profesional comprometido, orientado a la innovación y al desarrollo de soluciones eficientes. Se distingue por su organización, responsabilidad y capacidad para trabajar en equipo, aportando valor y resultados de calidad.</p>
                         <div class="project-tags">
-                            <span class="tag">Web App</span>
-                            <span class="tag">Backend</span>
+                            <span class="tag">Web</span>
+                            <span class="tag">Diseño</span>
+                            <span class="tag">Desarrollo</span>
                         </div>
-                        <a href="#" class="project-link">Ver detalles →</a>
+                        <a href="#" class="project-link" onclick="toggleProjectDetails('proyecto-portafolio'); return false;">Ver detalles →</a>
+                        <div class="project-details" style="display: none;">
+                            <h4 class="tech-title">Tecnología a utilizar</h4>
+                            <div class="project-tags">
+                                <span class="tag">Visual Studio 2022</span>
+                                <span class="tag">.Net Framework (C#)</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">SQL Server Management Studio</span>
+                                <span class="tag">GitHub</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -159,6 +194,52 @@
             <p class="footer-text">&copy; 2025 GLOBOLNET SOLUTIONS. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script>
+        function toggleProjectDetails(projectId) {
+            const projectCard = document.getElementById(projectId);
+            const details = projectCard.querySelector('.project-details');
+            const link = projectCard.querySelector('.project-link');
+            
+            if (details.style.display === 'none') {
+                details.style.display = 'block';
+                link.textContent = 'Ocultar detalles ←';
+                projectCard.classList.add('expanded');
+            } else {
+                details.style.display = 'none';
+                link.textContent = 'Ver detalles →';
+                projectCard.classList.remove('expanded');
+            }
+        }
+
+        // Capturar el primer frame de cada video como thumbnail
+        document.addEventListener('DOMContentLoaded', function() {
+            const videos = document.querySelectorAll('.project-video');
+            
+            videos.forEach(function(video) {
+                video.addEventListener('loadedmetadata', function() {
+                    // Ir al primer frame (0 segundos)
+                    video.currentTime = 0.1;
+                });
+                
+                video.addEventListener('seeked', function() {
+                    // Capturar el frame actual como imagen
+                    const canvas = document.createElement('canvas');
+                    canvas.width = video.videoWidth;
+                    canvas.height = video.videoHeight;
+                    const ctx = canvas.getContext('2d');
+                    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+                    
+                    // Convertir a imagen y establecer como poster
+                    const posterUrl = canvas.toDataURL('image/jpeg');
+                    video.poster = posterUrl;
+                    
+                    // Volver al inicio
+                    video.currentTime = 0;
+                });
+            });
+        });
+    </script>
 </body>
 </html>
 

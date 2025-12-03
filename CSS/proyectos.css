@@ -118,11 +118,38 @@ body {
 
 /* Sección Hero Proyectos */
 .projects-hero {
-    margin-top: 100px;
-    padding: 80px 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 120px 20px 80px;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../images/MontanaProyecto.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.projects-hero .container {
+    position: relative;
+    z-index: 2;
     text-align: center;
     color: var(--white);
+}
+
+.projects-hero .container {
+    position: relative;
+    z-index: 2;
 }
 
 .hero-title {
@@ -277,6 +304,35 @@ body {
 .project-link:hover {
     color: var(--accent-color);
     transform: translateX(5px);
+}
+
+.project-details {
+    margin-top: 25px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(121, 90, 133, 0.2);
+    animation: fadeIn 0.4s ease;
+}
+
+.tech-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+}
+
+.project-card.expanded {
+    transform: scale(1.02);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Footer */
