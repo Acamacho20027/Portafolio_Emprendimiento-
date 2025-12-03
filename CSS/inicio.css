@@ -65,7 +65,7 @@ body {
 }
 
 .logo-image {
-    height: 90px;
+    height: 130px;
     width: auto;
     object-fit: contain;
     display: block;
@@ -540,7 +540,7 @@ html {
     }
 
     .logo-image {
-        height: 70px;
+        height: 100px;
     }
 
     .hero-title {
@@ -586,7 +586,7 @@ html {
     }
 
     .logo-image {
-        height: 60px;
+        height: 85px;
     }
 
     .nav-menu {
